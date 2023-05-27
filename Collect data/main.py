@@ -15,7 +15,7 @@ data_writer.writerow(["Title", "Location", "Price",  "Posted On", "Pillar Size",
                       "House Area", "Beds", "Living", "Kitchen", "Bathrooms", "Property Face Direction", "Parking Space", "Amenities"])
 file.close()
 
-for page_number in range(1, 26):
+for page_number in range(1, 27):
 
     # create empty variable:
     _title = ""
