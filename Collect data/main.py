@@ -8,7 +8,7 @@ website = 'https://gharsansarnepal.com/category/home-for-sale-in-kathmandu/buy?p
 important_data = ["Posted On", "Pillar Size", "Tank Capacity", "Road Size", "Road Type", "Built On", "Land Area",
                   "House Area", "Beds", "Living", "Kitchen", "Bathrooms", "Property Face Direction", "Parking Space"]
 
-file = open("data.csv", 'a')
+file = open("data_set.csv", 'a')
 data_writer = csv.writer(
     file, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
 data_writer.writerow(["Title", "Location", "Price",  "Posted On", "Pillar Size", "Tank Capacity", "Road Size", "Road Type", "Built On", "Land Area",
@@ -93,7 +93,7 @@ for page_number in range(1, 27):
         # print(amenities)
 
         header_data = [_title, _location, _price]
-        file = open("data.csv", 'a')
+        file = open("data_set.csv", 'a')
         data_writer = csv.writer(
             file, delimiter=';', quotechar='"', quoting=csv.QUOTE_MINIMAL)
         writable_data = header_data+data_to_write
